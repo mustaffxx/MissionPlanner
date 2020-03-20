@@ -142,7 +142,11 @@ namespace MissionPlanner
             this.MenuFlightPlanner.Click += new System.EventHandler(this.MenuFlightPlanner_Click);
             // 
             // MenuInitConfig
-            // 
+            //
+            // to deactivate or hide button
+            //this.MenuConfigTune.Enabled = false; // make this gray
+            this.MenuInitConfig.Available = false; // hide button
+            //
             this.MenuInitConfig.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuInitConfig, "MenuInitConfig");
             this.MenuInitConfig.Margin = new System.Windows.Forms.Padding(0);
@@ -151,6 +155,12 @@ namespace MissionPlanner
             // 
             // MenuConfigTune
             // 
+
+            // to deactivate or hide button
+            //this.MenuConfigTune.Enabled = false; // make this gray
+            this.MenuConfigTune.Available = false; // hide button
+            //
+
             this.MenuConfigTune.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuConfigTune, "MenuConfigTune");
             this.MenuConfigTune.Margin = new System.Windows.Forms.Padding(0);
@@ -158,7 +168,12 @@ namespace MissionPlanner
             this.MenuConfigTune.Click += new System.EventHandler(this.MenuTuning_Click);
             // 
             // MenuSimulation
-            // 
+            //
+            // to deactivate or hide button
+            //this.MenuConfigTune.Enabled = false; // make this gray
+            this.MenuSimulation.Available = false; // hide button
+            //
+
             this.MenuSimulation.ForeColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.MenuSimulation, "MenuSimulation");
             this.MenuSimulation.Margin = new System.Windows.Forms.Padding(0);
